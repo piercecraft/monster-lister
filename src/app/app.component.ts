@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { MonsterSearchComponent } from "./components/monster-search/monster-search.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, MonsterSearchComponent],
   template: `
-    <h1>Welcome to {{title}}!</h1>
-
+    <app-monster-search />
     <router-outlet />
   `,
   styles: [],
